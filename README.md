@@ -1,26 +1,12 @@
 # Mina zkApp: 01 Hello World
 
-This template uses TypeScript.
+Mina zkApp sample that works with ts-node
 
-## How to build
+Just run 
 
-```sh
-npm run build
 ```
-
-## How to run tests
-
-```sh
-npm run test
-npm run testw # watch mode
+yarn ts-node src/main.ts
 ```
-
-## How to run coverage
-
-```sh
-npm run coverage
-```
-
 ## License
 
 [Apache-2.0](LICENSE)

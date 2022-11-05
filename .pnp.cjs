@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:46ceff869f42648a6b9ff10d46da481760bddd16bc62ad536a15a15e20b967402ea2e03c07dd6a85f6901dee5d54ff2eb870946665aeb4df55cfab69e0b40f19#npm:7.20.2"],\
             ["@babel/preset-typescript", "virtual:46ceff869f42648a6b9ff10d46da481760bddd16bc62ad536a15a15e20b967402ea2e03c07dd6a85f6901dee5d54ff2eb870946665aeb4df55cfab69e0b40f19#npm:7.18.6"],\
             ["@types/jest", "npm:27.5.2"],\
+            ["@types/node", "npm:18.11.9"],\
             ["@typescript-eslint/eslint-plugin", "virtual:46ceff869f42648a6b9ff10d46da481760bddd16bc62ad536a15a15e20b967402ea2e03c07dd6a85f6901dee5d54ff2eb870946665aeb4df55cfab69e0b40f19#npm:5.42.0"],\
             ["@typescript-eslint/parser", "virtual:46ceff869f42648a6b9ff10d46da481760bddd16bc62ad536a15a15e20b967402ea2e03c07dd6a85f6901dee5d54ff2eb870946665aeb4df55cfab69e0b40f19#npm:5.42.0"],\
             ["eslint", "npm:8.26.0"],\
@@ -55,6 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:46ceff869f42648a6b9ff10d46da481760bddd16bc62ad536a15a15e20b967402ea2e03c07dd6a85f6901dee5d54ff2eb870946665aeb4df55cfab69e0b40f19#npm:7.20.2"],\
             ["@babel/preset-typescript", "virtual:46ceff869f42648a6b9ff10d46da481760bddd16bc62ad536a15a15e20b967402ea2e03c07dd6a85f6901dee5d54ff2eb870946665aeb4df55cfab69e0b40f19#npm:7.18.6"],\
             ["@types/jest", "npm:27.5.2"],\
+            ["@types/node", "npm:18.11.9"],\
             ["@typescript-eslint/eslint-plugin", "virtual:46ceff869f42648a6b9ff10d46da481760bddd16bc62ad536a15a15e20b967402ea2e03c07dd6a85f6901dee5d54ff2eb870946665aeb4df55cfab69e0b40f19#npm:5.42.0"],\
             ["@typescript-eslint/parser", "virtual:46ceff869f42648a6b9ff10d46da481760bddd16bc62ad536a15a15e20b967402ea2e03c07dd6a85f6901dee5d54ff2eb870946665aeb4df55cfab69e0b40f19#npm:5.42.0"],\
             ["eslint", "npm:8.26.0"],\
@@ -8152,7 +8154,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.3"],\
-            ["@types/node", null],\
+            ["@types/node", "npm:18.11.9"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\

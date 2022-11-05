@@ -1,4 +1,3 @@
-// import { Square } from './Square';
 import { IncrementSecret } from './IncrementSecret';
 import {
   isReady,

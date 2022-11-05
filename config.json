@@ -1,4 +1,10 @@
 {
   "version": 1,
-  "networks": {}
+  "networks": {
+    "tomo-test": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/tomo-test.json",
+      "fee": "0.1"
+    }
+  }
 }

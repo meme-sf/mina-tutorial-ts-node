@@ -1,4 +1,5 @@
-import { Square } from './Square';
+// import { Square } from './Square';
+import { IncrementSecret } from "./IncrementSecret";
 import {
   isReady,
   shutdown,
@@ -20,16 +21,23 @@ import {
   const zkAppPrivateKey = PrivateKey.random();
   const zkAppAddress = zkAppPrivateKey.toPublicKey();
 
-  const contract = new Square(zkAppAddress);
+  const salt = Field.random();
+
+  // const contract = new Square(zkAppAddress);
+  const contract = new IncrementSecret(zkAppAddress);
   const deployTxn = await Mina.transaction(deployerAccount, () => {
     AccountUpdate.fundNewAccount(deployerAccount);
     contract.deploy({ zkappKey: zkAppPrivateKey });
-    contract.init();
+    contract.init(salt, Field(750));
     contract.sign(zkAppPrivateKey);
   });
   await deployTxn.send().wait();
-  const num0 = contract.num.get();
-  console.log(' after init', num0.toString());
+
+  const txn1 = await Mina.transaction(deployerAccount, () => {
+    contract.incrementSecret(salt, Field(750));
+    contract.sign(zkAppPrivateKey);
+  });
+
   console.log('Shutting down');
   await shutdown();
 })();
